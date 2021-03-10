@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API- GitHub</title>
+    <link rel="stylesheet" text="text/css" href="../public/styles/_style.css">
+    <link rel="shortcut icon" href="../public/assets/api.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="app" class="al-it-c ct fh jf-ct-c row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
+                    <div class="labels">
+                        <p class="fw tx-lg">All</p>
+                        <p class="cp tx-bk-hv tx-sk tx-sm">Limpar</p>
+                    </div>
+                    <input type="text" placeholder="Type a whole" class="bd-b-st-sl bd-cl-df bd-wd-1 fw pt-1-xxxl tx-md" />
+                    <div class="error"></div>
+                </div>
+                <div class="col-12 pt-1 tx-c">
+                    <button class="bd-cl-pm bd-rd-2 bd-st-sl bd-wd-1 bg-pm-hv ls-1 pd-1 tx-b tx-c tx-tf-u ts-all tx-wt-hv">Complete</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="user" class="col-12 mb-1 mt-2 tx-b tx-c hd"></div>
+                <div class="col-12">
+                    <div id="loader" class="row jf-ct-c al-it-c pt-4 hd">
+                        <div class="loader"></div>
+                    </div>  
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../public/scripts/todos.js"></script>
+</body>
+</html>

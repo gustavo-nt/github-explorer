@@ -1,0 +1,19 @@
+/* Importações dos arquivos */
+@import '_variables.css';
+@import '_animations.css';
+@import '_background-color.css';
+@import '_border.css';
+@import '_float-button.css';
+@import '_fonts-sizes.css';
+@import '_grid.css';
+@import '_help-button.css';
+@import '_image.css';
+@import '_loader.css';
+@import '_margins.css';
+@import '_menu.css';
+@import '_paddings.css';
+@import '_reset.css';
+@import '_select.css';
+@import '_text-color.css';
+@import '_typography.css';
+@import '_z-index.css';

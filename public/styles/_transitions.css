@@ -1,0 +1,4 @@
+/* Transitions */
+.ts-all {
+    transition: all .5;
+}

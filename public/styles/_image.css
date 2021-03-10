@@ -1,0 +1,30 @@
+/* Imagem responsiva */
+.img-rp {
+    height: auto;
+    width: var(--full);
+}
+
+.img-rp-ht {
+    height: var(--full);
+    width: auto;
+}
+
+/* Imagem redonda perfil */
+.img-rd {
+    border-radius: var(--full);
+}
+
+/* Imagem redonda de perfil simétrica */
+.img-bg-cr {
+    border: 0;
+    opacity: 1;
+    overflow: hidden;
+    display: inline-flex;
+    background-size: cover;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-position: 50%;
+    width: 85px;
+    height: 85px;
+}

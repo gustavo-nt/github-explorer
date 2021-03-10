@@ -1,0 +1,138 @@
+/* Página */
+html {
+    box-sizing: border-box;
+}
+
+/* Página e corpo */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Imagens */
+img {
+    vertical-align: middle;
+}
+
+/* Input */
+input {
+    margin: 0;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	background: none;
+    line-height: 1;
+    font-family: var(--FontPrimary);
+}
+
+input:focus {
+    outline-width: unset;
+    outline-style: unset;
+    outline-color: unset;
+    outline: unset;
+}
+
+/* TextArea */
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-family: FontPrimary;
+}
+
+textarea:focus {
+    outline-width: unset;
+    outline-style: unset;
+    outline-color: unset;
+    outline: unset;
+}
+
+/* Select */
+select {
+    border: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent !important;
+    display: inline-block;
+    outline: none; 
+    overflow: hidden;
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+}
+
+/* Remove seta padrão do IE */
+select::-ms-expand {
+    display: none;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botão */
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    text-align: inherit;
+    outline: none;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Parágrafos */
+p {
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+}
+
+/* Títulos e Subtítulos */
+h1, h2, h3, h4, h5 {
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+}

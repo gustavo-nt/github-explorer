@@ -1,0 +1,19 @@
+/* Esconde o menu */
+.hide-menu {
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: opacity 0.5s, visibility 0.5s linear;
+    -o-transition: opacity 0.5s, visibility 0.5s linear;
+    -webkit-transition: opacity 0.5s, visibility 0.5s linear;
+    transition: opacity 0.5s, visibility 0.5s linear;
+}
+
+/* Mostra o menu */
+.show-menu {
+    visibility: visible;
+    opacity: 1;
+    -moz-transition: opacity 0.5s, visibility 0.5s linear;
+    -o-transition: opacity 0.5s, visibility 0.5s linear;
+    -webkit-transition: opacity 0.5s, visibility 0.5s linear;
+    transition: opacity 0.5s, visibility 0.5s linear;
+}

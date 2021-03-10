@@ -1,0 +1,155 @@
+/* Efeito  */
+@keyframes tooltipVertical {
+    to {
+        opacity: .9;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes tooltipHorizontal {
+    to {
+        opacity: .9;
+        transform: translate(0, -50%);
+    }
+}
+
+/* Fade */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes(fadeOut) {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Fadeout */
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75
+    }
+    50% {
+        opacity: 0.5
+    }
+    75% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75
+    }
+    50% {
+        opacity: 0.5
+    }
+    75% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadein {
+    -webkit-animation: fadein .3s;
+    animation: fadein .3s;
+    -moz-animation: fadein .3s;
+    -o-animation: fadein .3s;
+}
+
+.fade.in {
+    animation: fadeIn 0.2s linear;
+}
+
+.fade.out {
+    animation: fadeOut 0.3s linear;
+}
+
+/* Spin */
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hover dos link */
+.tx-hv:hover {
+    font-weight: bold;
+}
+
+/* Animação de adição */
+@keyframes addRow {
+    0% {
+        width: -100% !important;
+        background: var(--color-default);
+        transform: translate(100%);
+    }
+    100% {
+        width: 0% !important;
+    }
+}
+
+/* Animação de REMOÇÃO */
+@keyframes deleteRow {
+    0% {
+        width: 100% !important;
+    }
+    100% {
+        width: 0% !important;
+        background: var(--color-default);
+        transform: translate(-200%);
+    }
+}
+
+/* Animação de REMOÇÃO */
+@keyframes deleteRowMobile {
+    0% {
+        width: 100% !important;
+    }
+    100% {
+        width: 0% !important;
+        background: var(--color-default);
+        transform: translate(300%);
+    }
+}

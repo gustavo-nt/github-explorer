@@ -1,0 +1,20 @@
+/* Sekect */
+.select {
+    display: inline-block;
+    position: relative;
+}
+
+.select:after {
+    font-family: var(--FontPrimary);
+    content: '\e918';
+    color: #707070;
+    font-size: 7.5px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    padding-right: 15px;
+}
+
+option {
+    background-color: #F5F5F5;
+}

@@ -1,0 +1,153 @@
+/* Background Color */
+.bg-wt{
+    background-color: var(--color-white);
+}
+
+.bg-bk{
+    background-color: var(--color-black);
+}
+
+.bg-pm{
+    background-color: var(--color-primary);
+}
+
+.bg-sd{
+    background-color: var(--color-secundary);
+}
+
+.bg-sd{
+    background-color: var(--color-secundary);
+}
+
+.bg-tr{
+    background-color: var(--color-third);
+}
+
+.bg-ac{
+    background-color: var(--color-accent);
+}
+
+.bg-df{
+    background-color: var(--color-default);
+}
+
+.bg-if{
+    background-color: var(--color-info);
+}
+
+.bg-sc{
+    background-color: var(--color-sucess);
+}
+
+.bg-wn{
+    background-color: var(--color-warning);
+}
+
+.bg-dg{
+    background-color: var(--color-danger);
+}
+
+.bg-sk{
+    background-color: var(--color-smoke);
+}
+
+.bg-fb{
+    background-color: var(--color-facebook);
+}
+
+.bg-wt{
+    background-color: var(--color-whatsapp);
+}
+
+.bg-tw{
+    background-color: var(--color-twitter);
+}
+
+.bg-nt{
+    background-color: var(--color-netflix);
+}
+
+.bg-ap{
+    background-color: var(--color-alpha);
+}
+
+.dark-background {
+    background-color: var(--color-dark);
+}
+
+/* Background Color Hover */
+.bg-wt-hv:hover{
+    background-color: var(--color-white);
+}
+
+.bg-bk-hv:hover{
+    background-color: var(--color-black);
+}
+
+.bg-pm-hv:hover{
+    background-color: var(--color-primary);
+}
+
+.bg-sd-hv:hover{
+    background-color: var(--color-secundary);
+}
+
+.bg-sd-hv:hover{
+    background-color: var(--color-secundary);
+}
+
+.bg-tr-hv:hover{
+    background-color: var(--color-third);
+}
+
+.bg-ac-hv:hover{
+    background-color: var(--color-accent);
+}
+
+.bg-df-hv:hover{
+    background-color: var(--color-default);
+}
+
+.bg-if-hv:hover{
+    background-color: var(--color-info);
+}
+
+.bg-sc-hv:hover{
+    background-color: var(--color-sucess);
+}
+
+.bg-wn-hv:hover{
+    background-color: var(--color-warning);
+}
+
+.bg-dg-hv:hover{
+    background-color: var(--color-danger);
+}
+
+.bg-sk-hv:hover{
+    background-color: var(--color-smoke);
+}
+
+.bg-fb-hv:hover{
+    background-color: var(--color-facebook);
+}
+
+.bg-wt-hv:hover{
+    background-color: var(--color-whatsapp);
+}
+
+.bg-tw-hv:hover{
+    background-color: var(--color-twitter);
+}
+
+.bg-nt-hv:hover{
+    background-color: var(--color-netflix);
+}
+
+.bg-ap-hv:hover{
+    background-color: var(--color-alpha);
+}
+
+.dark-background:ho-hvver {
+    background-color: var(--color-dark);
+}

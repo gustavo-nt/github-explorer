@@ -1,0 +1,2008 @@
+/* Grid */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Container */
+.ct {
+    width: 100%;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ct-fl {
+    width: 100%;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Ct-gt's */
+.ct-gt-xxs{
+    padding-right: var(--ct-gt-xxs);
+    padding-left: var(--ct-gt-xxs);
+}
+
+.ct-gt-xs{
+    padding-right: var(--ct-gt-xs);
+    padding-left: var(--ct-gt-xs);
+}
+
+.ct-gt-sm{
+    padding-right: var(--ct-gt-sm);
+    padding-left: var(--ct-gt-sm);
+}
+
+.ct-gt-md{
+    padding-right: var(--ct-gt-md);
+    padding-left: var(--ct-gt-md);
+}
+
+.ct-gt-1{
+    padding-right: var(--ct-gt-1);
+    padding-left: var(--ct-gt-1);
+}
+
+.ct-gt-2{
+    padding-right: var(--ct-gt-2);
+    padding-left: var(--ct-gt-2);
+}
+
+.ct-gt-3{
+    padding-right: var(--ct-gt-3);
+    padding-left: var(--ct-gt-3);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: calc(var(--gutter-1x) * -1);
+    padding-left: calc(var(--gutter-1x) * -1);
+}
+
+/* Gutters */
+.no-gt > div {
+    padding-right: var(--dimen-0x);
+    padding-left: var(--dimen-0x);
+} 
+
+.gt-xxs > div {
+    padding-right: var(--dimen-xxs);
+    padding-left: var(--dimen-xxs);
+} 
+
+.gt-xs > div {
+    padding-right: var(--dimen-xs);
+    padding-left: var(--dimen-xs);
+} 
+
+.gt-sm > div {
+    padding-right: var(--dimen-sm);
+    padding-left: var(--dimen-sm);
+} 
+
+.gt-md > div {
+    padding-right: var(--dimen-md);
+    padding-left: var(--dimen-md);
+} 
+
+.gt-lg > div {
+    padding-right: var(--dimen-lg);
+    padding-left: var(--dimen-lg);
+} 
+
+.gt-1 > div {
+    padding-right: var(--dimen-1x);
+    padding-left: var(--dimen-1x);
+} 
+
+.gt-2 > div {
+    padding-right: var(--dimen-2x);
+    padding-left: var(--dimen-2x);
+} 
+
+.gt-3 > div {
+    padding-right: var(--dimen-3x);
+    padding-left: var(--dimen-3x);
+} 
+
+/* Gera as Colunas */
+.col {
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width:var(--full);
+    position: relative;
+}
+
+.col-auto {
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+    position: relative;
+}
+
+.col-1 {
+    --percent: calc(var(--full) / var(--grid-columns) * 1);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-2 {
+    --percent: calc(var(--full) / var(--grid-columns) * 2);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-3 {
+    --percent: calc(var(--full) / var(--grid-columns) * 3);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-4 {
+    --percent: calc(var(--full) / var(--grid-columns) * 4);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-5 {
+    --percent: calc(var(--full) / var(--grid-columns) * 5);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-6 {
+    --percent: calc(var(--full) / var(--grid-columns) * 6);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-7 {
+    --percent: calc(var(--full) / var(--grid-columns) * 7);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-8 {
+    --percent: calc(var(--full) / var(--grid-columns) * 8);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-9 {
+    --percent: calc(var(--full) / var(--grid-columns) * 9);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-10 {
+    --percent: calc(var(--full) / var(--grid-columns) * 10);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-11 {
+    --percent: calc(var(--full) / var(--grid-columns) * 11);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+.col-12 {
+    --percent: calc(var(--full) / var(--grid-columns) * 12);
+    flex: 0 0 var(--percent);
+    max-width: var(--percent);
+    position: relative;
+    width: var(--full);
+    min-height: 1px;
+    padding-right: var(--gutter-1x);
+    padding-left: var(--gutter-1x);
+}
+
+/* Media Queries */
+
+/* Breakpoint sm */
+@media (min-width: 576px){
+    .ct {
+        max-width: 540px;
+    }
+
+    /* Container */
+    .ct-sm {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ct-fl-sm {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Ct-gt's */
+    .ct-gt-xxs-sm {
+        padding-right: var(--ct-gt-xxs);
+        padding-left: var(--ct-gt-xxs);
+    }
+
+    .ct-gt-xs-sm {
+        padding-right: var(--ct-gt-xs);
+        padding-left: var(--ct-gt-xs);
+    }
+
+    .ct-gt-sm-sm {
+        padding-right: var(--ct-gt-sm);
+        padding-left: var(--ct-gt-sm);
+    }
+
+    .ct-gt-md-sm {
+        padding-right: var(--ct-gt-md);
+        padding-left: var(--ct-gt-md);
+    }
+
+    .ct-gt-1-sm {
+        padding-right: var(--ct-gt-1);
+        padding-left: var(--ct-gt-1);
+    }
+
+    .ct-gt-2-sm {
+        padding-right: var(--ct-gt-2);
+        padding-left: var(--ct-gt-2);
+    }
+
+    .ct-gt-3-sm {
+        padding-right: var(--ct-gt-3);
+        padding-left: var(--ct-gt-3);
+    }
+
+    /* Gutters */
+    .no-gt-sm > div {
+        padding-right: var(--dimen-0x);
+        padding-left: var(--dimen-0x);
+    } 
+
+    .gt-xxs-sm > div {
+        padding-right: var(--dimen-xxs);
+        padding-left: var(--dimen-xxs);
+    } 
+
+    .gt-xs-sm > div {
+        padding-right: var(--dimen-xs);
+        padding-left: var(--dimen-xs);
+    } 
+
+    .gt-sm-sm > div {
+        padding-right: var(--dimen-sm);
+        padding-left: var(--dimen-sm);
+    } 
+
+    .gt-md-sm > div {
+        padding-right: var(--dimen-md);
+        padding-left: var(--dimen-md);
+    } 
+
+    .gt-lg-sm > div {
+        padding-right: var(--dimen-lg);
+        padding-left: var(--dimen-lg);
+    } 
+
+    .gt-1-sm > div {
+        padding-right: var(--dimen-1x);
+        padding-left: var(--dimen-1x);
+    } 
+
+    .gt-2-sm > div {
+        padding-right: var(--dimen-2x);
+        padding-left: var(--dimen-2x);
+    } 
+
+    .gt-3-sm > div {
+        padding-right: var(--dimen-3x);
+        padding-left: var(--dimen-3x);
+    } 
+}
+
+/* Breakpoint md */
+@media (min-width: 768px){
+    .ct {
+        max-width: 720px;
+    }
+
+    /* Container */
+    .ct-md {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ct-fl-md {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Ct-gt's */
+    .ct-gt-xxs-md {
+        padding-right: var(--ct-gt-xxs);
+        padding-left: var(--ct-gt-xxs);
+    }
+
+    .ct-gt-xs-md {
+        padding-right: var(--ct-gt-xs);
+        padding-left: var(--ct-gt-xs);
+    }
+
+    .ct-gt-sm-md {
+        padding-right: var(--ct-gt-sm);
+        padding-left: var(--ct-gt-sm);
+    }
+
+    .ct-gt-md-md {
+        padding-right: var(--ct-gt-md);
+        padding-left: var(--ct-gt-md);
+    }
+
+    .ct-gt-1-md {
+        padding-right: var(--ct-gt-1);
+        padding-left: var(--ct-gt-1);
+    }
+
+    .ct-gt-2-md {
+        padding-right: var(--ct-gt-2);
+        padding-left: var(--ct-gt-2);
+    }
+
+    .ct-gt-3-md {
+        padding-right: var(--ct-gt-3);
+        padding-left: var(--ct-gt-3);
+    }
+
+    /* Gutters */
+    .no-gt-md > div {
+        padding-right: var(--dimen-0x);
+        padding-left: var(--dimen-0x);
+    } 
+
+    .gt-xxs-md > div {
+        padding-right: var(--dimen-xxs);
+        padding-left: var(--dimen-xxs);
+    } 
+
+    .gt-xs-md > div {
+        padding-right: var(--dimen-xs);
+        padding-left: var(--dimen-xs);
+    } 
+
+    .gt-sm-md > div {
+        padding-right: var(--dimen-sm);
+        padding-left: var(--dimen-sm);
+    } 
+
+    .gt-md-md > div {
+        padding-right: var(--dimen-md);
+        padding-left: var(--dimen-md);
+    } 
+
+    .gt-lg-md > div {
+        padding-right: var(--dimen-lg);
+        padding-left: var(--dimen-lg);
+    } 
+
+    .gt-1-md > div {
+        padding-right: var(--dimen-1x);
+        padding-left: var(--dimen-1x);
+    } 
+
+    .gt-2-md > div {
+        padding-right: var(--dimen-2x);
+        padding-left: var(--dimen-2x);
+    } 
+
+    .gt-3-md > div {
+        padding-right: var(--dimen-3x);
+        padding-left: var(--dimen-3x);
+    } 
+}
+
+/* Breakpoint lg */
+@media (min-width: 992px){
+    .ct {
+        max-width: 960px;
+    }
+
+    .ct-lg {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ct-fl-lg {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Ct-gt's */
+    .ct-gt-xxs-lg {
+        padding-right: var(--ct-gt-xxs);
+        padding-left: var(--ct-gt-xxs);
+    }
+
+    .ct-gt-xs-lg {
+        padding-right: var(--ct-gt-xs);
+        padding-left: var(--ct-gt-xs);
+    }
+
+    .ct-gt-sm-lg {
+        padding-right: var(--ct-gt-sm);
+        padding-left: var(--ct-gt-sm);
+    }
+
+    .ct-gt-md-lg {
+        padding-right: var(--ct-gt-md);
+        padding-left: var(--ct-gt-md);
+    }
+
+    .ct-gt-1-lg {
+        padding-right: var(--ct-gt-1);
+        padding-left: var(--ct-gt-1);
+    }
+
+    .ct-gt-2-lg {
+        padding-right: var(--ct-gt-2);
+        padding-left: var(--ct-gt-2);
+    }
+
+    .ct-gt-3-lg {
+        padding-right: var(--ct-gt-3);
+        padding-left: var(--ct-gt-3);
+    }
+
+    /* Gutters */
+    .no-gt-lg > div {
+        padding-right: var(--dimen-0x);
+        padding-left: var(--dimen-0x);
+    } 
+
+    .gt-xxs-lg > div {
+        padding-right: var(--dimen-xxs);
+        padding-left: var(--dimen-xxs);
+    } 
+
+    .gt-xs-lg > div {
+        padding-right: var(--dimen-xs);
+        padding-left: var(--dimen-xs);
+    } 
+
+    .gt-sm-lg > div {
+        padding-right: var(--dimen-sm);
+        padding-left: var(--dimen-sm);
+    } 
+
+    .gt-md-lg > div {
+        padding-right: var(--dimen-md);
+        padding-left: var(--dimen-md);
+    } 
+
+    .gt-lg-lg > div {
+        padding-right: var(--dimen-lg);
+        padding-left: var(--dimen-lg);
+    } 
+
+    .gt-1-lg > div {
+        padding-right: var(--dimen-1x);
+        padding-left: var(--dimen-1x);
+    } 
+
+    .gt-2-lg > div {
+        padding-right: var(--dimen-2x);
+        padding-left: var(--dimen-2x);
+    } 
+
+    .gt-3-lg > div {
+        padding-right: var(--dimen-3x);
+        padding-left: var(--dimen-3x);
+    } 
+}
+
+/* Breakpoint xl */
+@media (min-width: 1200px){
+    .ct {
+        max-width: 1140px;
+    }
+
+    .ct-xl {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ct-fl-xl {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Ct-gt's */
+    .ct-gt-xxs-xl {
+        padding-right: var(--ct-gt-xxs);
+        padding-left: var(--ct-gt-xxs);
+    }
+
+    .ct-gt-xs-xl {
+        padding-right: var(--ct-gt-xs);
+        padding-left: var(--ct-gt-xs);
+    }
+
+    .ct-gt-sm-xl {
+        padding-right: var(--ct-gt-sm);
+        padding-left: var(--ct-gt-sm);
+    }
+
+    .ct-gt-md-xl {
+        padding-right: var(--ct-gt-md);
+        padding-left: var(--ct-gt-md);
+    }
+
+    .ct-gt-1-xl {
+        padding-right: var(--ct-gt-1);
+        padding-left: var(--ct-gt-1);
+    }
+
+    .ct-gt-2-xl {
+        padding-right: var(--ct-gt-2);
+        padding-left: var(--ct-gt-2);
+    }
+
+    .ct-gt-3-xl {
+        padding-right: var(--ct-gt-3);
+        padding-left: var(--ct-gt-3);
+    }
+
+    /* Gutters */
+    .no-gt-xl > div {
+        padding-right: var(--dimen-0x);
+        padding-left: var(--dimen-0x);
+    } 
+
+    .gt-xxs-xl > div {
+        padding-right: var(--dimen-xxs);
+        padding-left: var(--dimen-xxs);
+    } 
+
+    .gt-xs-xl > div {
+        padding-right: var(--dimen-xs);
+        padding-left: var(--dimen-xs);
+    } 
+
+    .gt-sm-xl > div {
+        padding-right: var(--dimen-sm);
+        padding-left: var(--dimen-sm);
+    } 
+
+    .gt-md-xl > div {
+        padding-right: var(--dimen-md);
+        padding-left: var(--dimen-md);
+    } 
+
+    .gt-lg-xl > div {
+        padding-right: var(--dimen-lg);
+        padding-left: var(--dimen-lg);
+    } 
+
+    .gt-1-xl > div {
+        padding-right: var(--dimen-1x);
+        padding-left: var(--dimen-1x);
+    } 
+
+    .gt-2-xl > div {
+        padding-right: var(--dimen-2x);
+        padding-left: var(--dimen-2x);
+    } 
+
+    .gt-3-xl > div {
+        padding-right: var(--dimen-3x);
+        padding-left: var(--dimen-3x);
+    } 
+}
+
+/* Breakpoint xxl */
+@media (min-width: 1900px){
+    .ct {
+        max-width: 1820px;
+    }
+
+    .ct-xxl {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ct-fl-xxl {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Ct-gt's */
+    .ct-gt-xxs-xxl {
+        padding-right: var(--ct-gt-xxs);
+        padding-left: var(--ct-gt-xxs);
+    }
+
+    .ct-gt-xs-xxl {
+        padding-right: var(--ct-gt-xs);
+        padding-left: var(--ct-gt-xs);
+    }
+
+    .ct-gt-sm-xxl {
+        padding-right: var(--ct-gt-sm);
+        padding-left: var(--ct-gt-sm);
+    }
+
+    .ct-gt-md-xxl {
+        padding-right: var(--ct-gt-md);
+        padding-left: var(--ct-gt-md);
+    }
+
+    .ct-gt-1-xxl {
+        padding-right: var(--ct-gt-1);
+        padding-left: var(--ct-gt-1);
+    }
+
+    .ct-gt-2-xxl {
+        padding-right: var(--ct-gt-2);
+        padding-left: var(--ct-gt-2);
+    }
+
+    .ct-gt-3-xxl {
+        padding-right: var(--ct-gt-3);
+        padding-left: var(--ct-gt-3);
+    }
+
+    /* Gutters */
+    .no-gt-xxl > div {
+        padding-right: var(--dimen-0x);
+        padding-left: var(--dimen-0x);
+    } 
+
+    .gt-xxs-xxl > div {
+        padding-right: var(--dimen-xxs);
+        padding-left: var(--dimen-xxs);
+    } 
+
+    .gt-xs-xxl > div {
+        padding-right: var(--dimen-xs);
+        padding-left: var(--dimen-xs);
+    } 
+
+    .gt-sm-xxl > div {
+        padding-right: var(--dimen-sm);
+        padding-left: var(--dimen-sm);
+    } 
+
+    .gt-md-xxl > div {
+        padding-right: var(--dimen-md);
+        padding-left: var(--dimen-md);
+    } 
+
+    .gt-lg-xxl > div {
+        padding-right: var(--dimen-lg);
+        padding-left: var(--dimen-lg);
+    } 
+
+    .gt-1-xxl > div {
+        padding-right: var(--dimen-1x);
+        padding-left: var(--dimen-1x);
+    } 
+
+    .gt-2-xxl > div {
+        padding-right: var(--dimen-2x);
+        padding-left: var(--dimen-2x);
+    } 
+
+    .gt-3-xxl > div {
+        padding-right: var(--dimen-3x);
+        padding-left: var(--dimen-3x);
+    } 
+}
+
+
+/* Breakpoint xxxl */
+@media (min-width: 3000px){
+    .ct {
+        max-width: 2900px;
+    }
+
+    .ct-xxxl {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .ct-fl-xxxl {
+        width: 100%;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Ct-gt's */
+    .ct-gt-xxs-xxxl {
+        padding-right: var(--ct-gt-xxs);
+        padding-left: var(--ct-gt-xxs);
+    }
+
+    .ct-gt-xs-xxxl {
+        padding-right: var(--ct-gt-xs);
+        padding-left: var(--ct-gt-xs);
+    }
+
+    .ct-gt-sm-xxxl {
+        padding-right: var(--ct-gt-sm);
+        padding-left: var(--ct-gt-sm);
+    }
+
+    .ct-gt-md-xxxl {
+        padding-right: var(--ct-gt-md);
+        padding-left: var(--ct-gt-md);
+    }
+
+    .ct-gt-1-xxxl {
+        padding-right: var(--ct-gt-1);
+        padding-left: var(--ct-gt-1);
+    }
+
+    .ct-gt-2-xxxl {
+        padding-right: var(--ct-gt-2);
+        padding-left: var(--ct-gt-2);
+    }
+
+    .ct-gt-3-xxxl {
+        padding-right: var(--ct-gt-3);
+        padding-left: var(--ct-gt-3);
+    }
+
+    /* Gutters */
+    .no-gt-xxxl > div {
+        padding-right: var(--dimen-0x);
+        padding-left: var(--dimen-0x);
+    } 
+
+    .gt-xxs-xxxl > div {
+        padding-right: var(--dimen-xxs);
+        padding-left: var(--dimen-xxs);
+    } 
+
+    .gt-xs-xxxl > div {
+        padding-right: var(--dimen-xs);
+        padding-left: var(--dimen-xs);
+    } 
+
+    .gt-sm-xxxl > div {
+        padding-right: var(--dimen-sm);
+        padding-left: var(--dimen-sm);
+    } 
+
+    .gt-md-xxxl > div {
+        padding-right: var(--dimen-md);
+        padding-left: var(--dimen-md);
+    } 
+
+    .gt-lg-xxxl > div {
+        padding-right: var(--dimen-lg);
+        padding-left: var(--dimen-lg);
+    } 
+
+    .gt-1-xxxl > div {
+        padding-right: var(--dimen-1x);
+        padding-left: var(--dimen-1x);
+    } 
+
+    .gt-2-xxxl > div {
+        padding-right: var(--dimen-2x);
+        padding-left: var(--dimen-2x);
+    } 
+
+    .gt-3-xxxl > div {
+        padding-right: var(--dimen-3x);
+        padding-left: var(--dimen-3x);
+    } 
+}
+
+/* Breakpoint xs */
+@media (min-width: 0px) {
+    /* Gera as Colunas */
+    .col-xs {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-xs {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-xs {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}
+
+/* Breakpoint sm */
+@media (min-width: 576px) {
+    /* Gera as Colunas */
+    .col-sm {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-sm {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-sm {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}
+
+/* Breakpoint md */
+@media (min-width: 768px) {
+    /* Gera as Colunas */
+    .col-md {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-md {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-md {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}
+
+/* Breakpoint lg */
+@media (min-width: 992px) {
+    /* Gera as Colunas */
+    .col-lg {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-lg {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-lg {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}
+
+/* Breakpoint xl */
+@media (min-width: 1200px) {
+    /* Gera as Colunas */
+    .col-xl {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-xl {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-xl {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}
+
+/* Breakpoint xxl */
+@media (min-width: 1900px) {
+    /* Gera as Colunas */
+    .col-xxl {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-xxl {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-xxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}
+
+/* Breakpoint xxxl */
+@media (min-width: 3000px) {
+    /* Gera as Colunas */
+    .col-xxxl {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width:var(--full);
+        position: relative;
+    }
+
+    .col-auto-xxxl {
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none;
+        position: relative;
+    }
+
+    .col-1-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 1);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-2-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 2);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-3-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 3);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-4-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 4);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-5-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 5);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-6-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 6);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-7-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 7);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-8-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 8);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-9-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 9);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-10-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 10);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-11-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 11);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+
+    .col-12-xxxl {
+        --percent: calc(var(--full) / var(--grid-columns) * 12);
+        flex: 0 0 var(--percent);
+        max-width: var(--percent);
+        position: relative;
+        width: var(--full);
+        min-height: 1px;
+        padding-right: var(--gutter-1x);
+        padding-left: var(--gutter-1x);
+    }
+}

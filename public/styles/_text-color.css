@@ -1,0 +1,153 @@
+/* Text Color */
+.tx-wt{
+    color: var(--color-white);
+}
+
+.tx-bk{
+    color: var(--color-black);
+}
+
+.tx-pm{
+    color: var(--color-primary);
+}
+
+.tx-sd{
+    color: var(--color-secundary);
+}
+
+.tx-sd{
+    color: var(--color-secundary);
+}
+
+.tx-tr{
+    color: var(--color-third);
+}
+
+.tx-ac{
+    color: var(--color-accent);
+}
+
+.tx-df{
+    color: var(--color-default);
+}
+
+.tx-if{
+    color: var(--color-info);
+}
+
+.tx-sc{
+    color: var(--color-sucess);
+}
+
+.tx-wn{
+    color: var(--color-warning);
+}
+
+.tx-dg{
+    color: var(--color-danger);
+}
+
+.tx-sk{
+    color: var(--color-smoke);
+}
+
+.tx-fb{
+    color: var(--color-facebook);
+}
+
+.tx-whats{
+    color: var(--color-whatsapp);
+}
+
+.tx-tw{
+    color: var(--color-twitter);
+}
+
+.tx-nt{
+    color: var(--color-netflix);
+}
+
+.tx-ap{
+    color: var(--color-alpha);
+}
+
+.tx-dark {
+    color: var(--color-dark);
+}
+
+/* Text Color Hover */
+.tx-wt-hv:hover{
+    color: var(--color-white);
+}
+
+.tx-bk-hv:hover{
+    color: var(--color-black);
+}
+
+.tx-pm-hv:hover{
+    color: var(--color-primary);
+}
+
+.tx-sd-hv:hover{
+    color: var(--color-secundary);
+}
+
+.tx-sd-hv:hover{
+    color: var(--color-secundary);
+}
+
+.tx-tr-hv:hover{
+    color: var(--color-third);
+}
+
+.tx-ac-hv:hover{
+    color: var(--color-accent);
+}
+
+.tx-df-hv:hover{
+    color: var(--color-default);
+}
+
+.tx-if-hv:hover{
+    color: var(--color-info);
+}
+
+.tx-sc-hv:hover{
+    color: var(--color-sucess);
+}
+
+.tx-wn-hv:hover{
+    color: var(--color-warning);
+}
+
+.tx-dg-hv:hover{
+    color: var(--color-danger);
+}
+
+.tx-sk-hv:hover{
+    color: var(--color-smoke);
+}
+
+.tx-fb-hv:hover{
+    color: var(--color-facebook);
+}
+
+.tx-wthats-hv:hover{
+    color: var(--color-whatsapp);
+}
+
+.tx-tw-hv:hover{
+    color: var(--color-twitter);
+}
+
+.tx-nt-hv:hover{
+    color: var(--color-netflix);
+}
+
+.tx-ap-hv:hover{
+    color: var(--color-alpha);
+}
+
+.tx-dark:ho-hvver {
+    color: var(--color-dark);
+}
