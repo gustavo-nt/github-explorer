@@ -39,8 +39,8 @@ A aplicação lista todos os repositórios do GitHub de um usuário através do 
 
 ### ✅ Demonstração
 <p align="center">
-  <img src="https://github.com/gustavo-nt/analogic-clock/blob/master/public/assets/clock-github.png"/>
-  <img src="https://github.com/gustavo-nt/analogic-clock/blob/master/public/assets/clock-github.png"/> 
+  <img src="https://github.com/gustavo-nt/github-explorer/blob/master/public/assets/github-explorer-error.PNG"/>
+  <img src="https://github.com/gustavo-nt/github-explorer/blob/master/public/assets/github-explorer-sucess.PNG"/> 
 </p>
 
 ### ⚙ Pré-requisitos
