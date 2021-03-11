@@ -38,7 +38,7 @@
 A aplicação lista todos os repositórios do GitHub de um usuário através do campo input devidamente preenchido.
 
 ### ✅ Demonstração
-<p align="center" style="margin-top: 36px">
+<p align="center">
   <img src="https://github.com/gustavo-nt/github-explorer/blob/master/public/assets/github-explorer-sucess.PNG"/>
 </p>
 
