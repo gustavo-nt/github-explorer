@@ -8,6 +8,7 @@ self.listElement = document.querySelector('#app ul');
 self.inputElement = document.querySelector('#app input');
 self.buttonElement = document.querySelector('#app button');
 self.nameUser = document.querySelector('#user');
+self.results = document.querySelector('.results');
 self.loader = document.querySelector('#loader');
 
 // Styles labels
@@ -74,8 +75,8 @@ function addTodo() {
     self.loader.classList.remove('hd');
     self.nameUser.classList.add('hd');
 
-    if(self.rowError) {
-        self.rowError.remove();
+    if(document.querySelector('.error')) {
+        document.querySelector('.error').remove();
     }
 
     if(self.todoText == '') {
@@ -102,7 +103,7 @@ function addTodo() {
     } else {
         axios.get(`https://api.github.com/users/${self.todoText}/repos`)
         .then(
-            function(response){
+            function(response) {
                 self.loader.classList.add('hd');
                 self.todos = response.data;
 
@@ -113,8 +114,24 @@ function addTodo() {
             }
         )
         .catch(
-            function(error){
-                console.log(error)
+            function(error) {
+                self.loader.classList.add('hd');
+
+                let container = document.createElement('div');
+                let img = document.createElement('img');
+
+                container.classList.add('col-12', 'tx-c', 'error');
+                img.style.maxWidth = '360px';
+
+                img.setAttribute('src', '../public/assets/error.png');
+
+                container.appendChild(img);
+                self.results.appendChild(container);
+
+                self.todos = [];
+
+                renderTodos();
+                salveToStorage();
             }
         )
     }
