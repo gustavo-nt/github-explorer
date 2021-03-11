@@ -39,7 +39,7 @@ A aplicação lista todos os repositórios do GitHub de um usuário através do 
 
 ### ✅ Demonstração
 <p align="center">
-  <img src="https://github.com/gustavo-nt/github-explorer/blob/master/public/assets/github-explorer-error.PNG"/>
+  <img src="https://github.com/gustavo-nt/github-explorer/blob/master/public/assets/github-explorer-sucess.PNG"/>
 </p>
 
 ### ⚙ Pré-requisitos
