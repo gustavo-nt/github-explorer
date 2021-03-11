@@ -38,7 +38,10 @@
 A aplicação lista todos os repositórios do GitHub de um usuário através do campo input devidamente preenchido.
 
 ### ✅ Demonstração
-<img src="https://github.com/gustavo-nt/analogic-clock/blob/master/public/assets/clock-github.png"/>
+<p align="center">
+  <img src="https://github.com/gustavo-nt/analogic-clock/blob/master/public/assets/clock-github.png"/>
+  <img src="https://github.com/gustavo-nt/analogic-clock/blob/master/public/assets/clock-github.png"/> 
+</p>
 
 ### ⚙ Pré-requisitos
 
