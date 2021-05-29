@@ -6,6 +6,7 @@ self.labels = document.querySelector('#app .labels');
 self.clear = document.querySelector('#app .cp');
 self.listElement = document.querySelector('#app ul');
 self.inputElement = document.querySelector('#app input');
+self.errorMessage = document.querySelector('#app .errorMessage');
 self.buttonElement = document.querySelector('#app button');
 self.nameUser = document.querySelector('#user');
 self.results = document.querySelector('.results');
@@ -70,7 +71,7 @@ function renderTodos() {
 }
 
 function addTodo() {
-    self.todoText = inputElement.value;
+    self.todoText = self.inputElement.value;
     self.listElement.innerHTML = "";
     self.loader.classList.remove('hd');
     self.nameUser.classList.add('hd');
@@ -139,14 +140,25 @@ function addTodo() {
 
 renderTodos();
 
-self.clear.onclick = onRemove;
-self.buttonElement.onclick = addTodo;
-
-self.inputElement.addEventListener('keypress', function(e) {
-    if(e.key === 'Enter') {
+self.buttonElement.addEventListener("click", function() {
+    if (!self.inputElement.value) {
+        alertRequired();
+    } else {
         addTodo();
     }
 });
+
+self.inputElement.addEventListener('keypress', function(e) {
+    if(e.key === 'Enter') {
+        if (!self.inputElement.value) {
+            alertRequired();
+        } else {
+            addTodo();
+        }
+    }
+});
+
+self.clear.onclick = onRemove;
 
 function onRemove(pos) {
     if(!isNaN(pos)) {
@@ -156,10 +168,22 @@ function onRemove(pos) {
     }
 
     renderTodos();
-    salveToStorage();
+    localStorage.setItem('list_todos', JSON.stringify(self.todos));
 }
 
 function salveToStorage() {
     localStorage.setItem('list_todos', JSON.stringify(self.todos));
     localStorage.setItem('user', JSON.stringify(self.inputElement.value));
+}
+
+function alertRequired() {
+    self.inputElement.classList.remove('bd-cl-df');
+    self.inputElement.classList.add('bd-cl-dg');
+    self.errorMessage.classList.remove('hd');
+
+    setInterval(function() { 
+        self.inputElement.classList.add('bd-cl-df');
+        self.inputElement.classList.remove('bd-cl-dg');
+        self.errorMessage.classList.add('hd');
+    }, 3000);
 }
